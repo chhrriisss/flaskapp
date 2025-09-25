@@ -1,0 +1,2 @@
+echo Flask==3.1.2 > requirements.txt
+echo Flask-SQLAlchemy==3.1.1 >> requirements.txt
