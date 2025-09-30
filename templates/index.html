@@ -391,7 +391,7 @@
             <div class="login-card">
                 <h2>Sign in</h2>
                 <div id="loginMessages"></div>
-                <form id="loginForm">
+                <form id="loginForm" autocomplete="off">
                     <div class="form-group">
                         <label for="username">Login:</label>
                         <input type="text" id="username" name="username" required>
@@ -424,9 +424,9 @@
                 <div class="box">
                     <fieldset>
                         <legend>Status</legend>
-                        <label><input type="checkbox" id="filterPending" onchange="applyFilters()"> Open</label>
+                        <label><input type="checkbox" id="filterPending" onchange="applyFilters()"> Pending</label>
                         <label><input type="checkbox" id="filterProgress" onchange="applyFilters()"> In Progress</label>
-                        <label><input type="checkbox" id="filterCompleted" onchange="applyFilters()"> Closed</label>
+                        <label><input type="checkbox" id="filterCompleted" onchange="applyFilters()"> Completed</label>
                     </fieldset>
                 </div>
                 
@@ -441,7 +441,7 @@
             
             <div id="content">
                 <div class="stats-summary">
-                    <span id="totalTasks">0</span> issues total, 
+                    <span id="totalTasks">0</span> tasks total, 
                     <span id="pendingTasks">0</span> open, 
                     <span id="inProgressTasks">0</span> in progress, 
                     <span id="completedTasks">0</span> closed
